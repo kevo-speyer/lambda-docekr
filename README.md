@@ -2,9 +2,11 @@
 Simple webapp using AWS Lambda, API Gateway and Docker.
 
 ## Define environment variables
-`ecr_name=python-containers`
-`aws_account_id=691342082863`
-`region=us-east-1`
+```
+ecr_name=python-containers
+aws_account_id=691342082863
+region=us-east-1
+```
 
 ## Change code, then build image
 `docker build -t ${ecr_name} .`
