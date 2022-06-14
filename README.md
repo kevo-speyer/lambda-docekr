@@ -16,6 +16,8 @@ region=us-east-1
 
 ## Push to ECR in AWS
 `docker push ${aws_account_id}.dkr.ecr.${region}.amazonaws.com/${ecr_name}:latest`
+### If there is a Failure to authenticate, run:
+`aws ecr get-login-password --region $region | docker login --username AWS --password-stdin ${aws_account_id}.dkr.ecr.${region}.amazonaws.com`
 
 ## Deploy
 * Create Lambda function from container image or change image to the recently uploaded one
