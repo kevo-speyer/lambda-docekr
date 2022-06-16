@@ -1,5 +1,5 @@
 # Lambda-Docker
-Simple webapp using AWS Lambda, API Gateway and Docker.
+Simple webapp using AWS Lambda, Docker, API Gateway and ECR.
 
 ## Define environment variables
 ```
